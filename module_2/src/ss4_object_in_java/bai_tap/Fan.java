@@ -1,18 +1,17 @@
 package ss4_object_in_java.bai_tap;
 
-import java.util.Scanner;
-
 public class Fan {
     final int SLOW = 1;
-    final int MEDIUM = 2;
     final int FAST = 3;
-    private int speed = SLOW ;
-    private boolean on = false;
-    private double radius = 5.0;
-    private String color = "blue";
+    private int speed;
+    private boolean on;
+    private double radius;
+    private String color;
 
     public Fan() {
-
+        speed = SLOW;
+        radius = 5.0;
+        color = "blue";
     }
     public int getSpeed() {
         return speed;
@@ -33,8 +32,7 @@ public class Fan {
     public double getRadius() {
         return radius;
     }
-
-    public void setRadius(double radius) {
+    public void setRadius(double radius){
         this.radius = radius;
     }
 
@@ -54,28 +52,14 @@ public class Fan {
     }
 
     public static void main(String[] args) {
-        Scanner ip = new Scanner(System.in);
-        Fan fan = new Fan();
-        fan.setRadius(5.0);
-        fan.setColor("Yellow");
-        System.out.println("ON or Off Fan:");
-        boolean b = ip.nextBoolean();
-        fan.setOn(b);
-        System.out.println("nhập tốc độ quạt");
-        int i = ip.nextInt();
-        switch (i){
-            case 1:
-                fan.setSpeed(fan.SLOW);
-                break;
-            case 2:
-                fan.setSpeed(fan.MEDIUM);
-                break;
-            case 3:
-                fan.setSpeed(fan.FAST);
-                break;
-            default:
-                System.out.println("vui lòng nhập lại");
-        }
-        System.out.println(fan.fans());
+        Fan fan1 = new Fan();
+        fan1.setRadius(10.0);
+        fan1.setOn(true);
+        fan1.setSpeed(fan1.FAST);
+        fan1.setColor("yellow");
+        System.out.println(fan1.fans());
+        System.out.println("===========================================================");
+        Fan fan2 = new Fan();
+        System.out.println(fan2.fans());
     }
 }

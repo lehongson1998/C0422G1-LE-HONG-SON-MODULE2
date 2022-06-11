@@ -4,22 +4,22 @@ import java.util.Scanner;
 
 public class QuadraticEquation {
     // QuadraticEquation Ax2 + bx + c = 0;
-    private int a;
-    private int b;
-    private int c;
-    QuadraticEquation(int a, int b, int c){
+    private double a;
+    private double b;
+    private double c;
+    public QuadraticEquation(double a, double b, double c){
         this.a = a;
         this.b = b;
         this.c = c;
     }
     public double getA() {
-        return this.a;
+        return a;
     }
     public double getB() {
-        return this.b;
+        return b;
     }
     public double getC() {
-        return this.c;
+        return c;
     }
     double getDiscriminant(){
         return Math.pow(this.b, 2) - (4 * this.a * this.c);
@@ -42,12 +42,8 @@ public class QuadraticEquation {
     }
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int a, b, c;
         System.out.println("enter a, b, c :");
-        a = input.nextInt();
-        b = input.nextInt();
-        c = input.nextInt();
-        QuadraticEquation equation = new QuadraticEquation(a, b, c);
+        QuadraticEquation equation = new QuadraticEquation(input.nextInt(), input.nextInt(), input.nextInt());
         System.out.println("a =" + equation.getA());
         System.out.println("b =" + equation.getB());
         System.out.println("c =" + equation.getC());
