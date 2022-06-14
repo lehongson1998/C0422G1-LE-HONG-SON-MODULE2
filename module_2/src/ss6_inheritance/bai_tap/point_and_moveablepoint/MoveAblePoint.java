@@ -44,12 +44,10 @@ public class MoveAblePoint extends Point {
         float[] array = {this.xSpeed, this.ySpeed};
         return  array;
     }
-    public float[] move(){
-         float[] moveArr = new float[2];
-        for (int i = 0; i < moveArr.length; i++) {
-            moveArr[i] = getXY()[i] + getSpeed()[i];
-        }
-        return moveArr;
+    public MoveAblePoint move(){
+         super.setX(super.getX() + xSpeed);
+         super.setY(super.getY() + ySpeed);
+         return this;
     }
     @Override
     public String toString() {
@@ -62,7 +60,6 @@ public class MoveAblePoint extends Point {
     }
     public static void main(String[] args) {
         MoveAblePoint mv = new MoveAblePoint(1.1f,1.2f, 1f, 1f);
-        System.out.println(mv);
-        System.out.println(Arrays.toString(mv.move()));
+        System.out.println(mv.move());
     }
 }

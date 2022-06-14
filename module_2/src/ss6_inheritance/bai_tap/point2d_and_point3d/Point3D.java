@@ -1,5 +1,7 @@
 package ss6_inheritance.bai_tap.point2d_and_point3d;
 
+import java.util.Arrays;
+
 public class Point3D extends Point2D {
     private float z = 0.0f;
 
@@ -27,12 +29,8 @@ public class Point3D extends Point2D {
         return array;
     }
     public String toString() {
-        return "(x, y, z) = "
-                +getXYZ()[0]
-                + ";"
-                +getXYZ()[1]
-                + ";"
-                +getXYZ()[2];
+        return "(x, y, z) = "+
+        Arrays.toString(this.getXYZ());
     }
 
     public static void main(String[] args) {
