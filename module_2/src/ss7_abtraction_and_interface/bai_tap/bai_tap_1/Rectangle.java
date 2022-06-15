@@ -1,6 +1,7 @@
-package ss6_inheritance.thuc_hanh;
+package ss7_abtraction_and_interface.bai_tap.bai_tap_1;
 
-public class Rectangle extends Shape {
+
+public class Rectangle extends Shapes implements Resizeable {
     private double width;
     private double length;
 
@@ -41,12 +42,21 @@ public class Rectangle extends Shape {
                 + getWidth()
                 + " and length="
                 + getLength()
-                + ", which is a subclass of "
+                + ","
                 + super.toString();
+    }
+
+    @Override
+    public void resize(double percent) {
+        width += width * percent/100;
+        length += length * percent/100;
     }
 
     public static void main(String[] args) {
         Rectangle rtg = new Rectangle(1.0, 2.0, "black", false);
-        System.out.println(rtg);
+        System.out.println("before Area = " + rtg.getArea());
+        //rtg.resize(Math.floor(Math.random()* 100 + 1));
+        rtg.resize(100);
+        System.out.println("after Area = " + rtg.getArea());
     }
 }

@@ -1,6 +1,8 @@
-package ss6_inheritance.thuc_hanh;
+package ss7_abtraction_and_interface.bai_tap.bai_tap_1;
 
-public class Square extends Rectangle{
+import ss7_abtraction_and_interface.bai_tap.bai_tap_2.Colorable;
+
+public class Square extends Rectangle implements Resizeable, Colorable {
     public Square () {
 
     }
@@ -37,12 +39,12 @@ public class Square extends Rectangle{
                 + getSide()
                 + "Area= "
                 + getArea()
-                + ", which is a subclass of "
+                + ","
                 + super.toString();
     }
 
-    public static void main(String[] args) {
-        Square sqr = new Square(2.0, "blue", true);
-        System.out.println(sqr);
+    @Override
+    public void howToColor() {
+        System.out.println(" Color all four sides..");
     }
 }
