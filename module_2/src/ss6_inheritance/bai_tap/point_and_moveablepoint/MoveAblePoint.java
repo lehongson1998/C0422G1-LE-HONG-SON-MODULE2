@@ -57,9 +57,18 @@ public class MoveAblePoint extends Point {
                 +xSpeed
                 +",ySpeed = "
                 +ySpeed;
+
+
     }
     public static void main(String[] args) {
         MoveAblePoint mv = new MoveAblePoint(1.1f,1.2f, 1f, 1f);
         System.out.println(mv.move());
+
+        Point pd = new MoveAblePoint(1.0f,1.1f,1.2f,1.4f);
+        // pd1 = (MoveAblePoint)pd;
+        System.out.println(((MoveAblePoint)pd).getXSpeed());
+        System.out.println(pd);
+        ((MoveAblePoint)pd).setSpeed(1.2f, 1.3f);
+        System.out.println(pd);
     }
 }

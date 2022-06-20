@@ -5,17 +5,17 @@ import java.util.Scanner;
 public class LineArray2D {
     public static void main(String[] args) {
         int m, n;
-        Scanner sncs = new Scanner(System.in);
+        Scanner snc = new Scanner(System.in);
         System.out.println("enter m:");
-        m = sncs.nextInt();
+        m = snc.nextInt();
         System.out.println("enter n:");
-        n = sncs.nextInt();
+        n = snc.nextInt();
         int[][] array2d = new int[m][n];
         int i = 0, j, k, a, sum = 0;
         while (i < array2d.length) {
             for (j = 0; j < array2d[i].length; j++) {
                 System.out.println("enter element :" + i + j);
-                array2d[i][j] = sncs.nextInt();
+                array2d[i][j] = snc.nextInt();
             }
             i++;
         }

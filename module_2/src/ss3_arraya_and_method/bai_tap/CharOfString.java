@@ -10,13 +10,13 @@ public class CharOfString {
         str = scanner.nextLine();
         System.out.println(str);
         System.out.println("enter a 1 character:");
-        char s = 'a';
+        char s = scanner.nextLine().charAt(0);
         int i, count = 0;
         for (i = 0; i < str.length(); i++){
             if (str.charAt(i) == s){
                 count++;
             }
         }
-        System.out.println("char " + s + " appear " + count);
+        System.out.println("char (" + s + ") appear " + count);
     }
 }

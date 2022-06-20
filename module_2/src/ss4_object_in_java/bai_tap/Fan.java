@@ -13,6 +13,7 @@ public class Fan {
         radius = 5.0;
         color = "blue";
     }
+
     public int getSpeed() {
         return speed;
     }
@@ -32,7 +33,8 @@ public class Fan {
     public double getRadius() {
         return radius;
     }
-    public void setRadius(double radius){
+
+    public void setRadius(double radius) {
         this.radius = radius;
     }
 
@@ -43,11 +45,12 @@ public class Fan {
     public void setColor(String color) {
         this.color = color;
     }
-    public String fans(){
-        if (!isOn()){
+
+    public String fans() {
+        if (!isOn()) {
             return "Fan is Off" + "\n" + "Color: " + this.getColor() + "\n" + "Radius: " + this.getRadius();
-        }else{
-           return "Fan is On\n" + "Speed: " + this.getSpeed() +"\nColor: " + this.getColor() + "\nRadius: " + this.getRadius();
+        } else {
+            return "Fan is On\n" + "Speed: " + this.getSpeed() + "\nColor: " + this.getColor() + "\nRadius: " + this.getRadius();
         }
     }
 
