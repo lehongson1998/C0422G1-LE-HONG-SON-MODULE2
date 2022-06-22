@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0b548c5-4130-46f8-94a0-64193af98c1f" name="Changes" comment="" />
+    <list default="true" id="e0b548c5-4130-46f8-94a0-64193af98c1f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/module_2/src/ss12_colection_map/bai_tap/bai_tap_1/Function.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_2/src/ss12_colection_map/bai_tap/bai_tap_1/Function.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_2/src/ss12_colection_map/bai_tap/bai_tap_1/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_2/src/ss12_colection_map/bai_tap/bai_tap_1/ProductManager.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +29,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/module_2" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -39,6 +42,7 @@
       <updated>1654273922346</updated>
       <workItem from="1654273923811" duration="133000" />
       <workItem from="1654274280743" duration="1066000" />
+      <workItem from="1655868168318" duration="32000" />
     </task>
     <servers />
   </component>
@@ -55,5 +59,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

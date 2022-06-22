@@ -14,7 +14,7 @@ public class Function {
         products.add(new Product(3, "Asus Zenfone 5", 2021, "Asus", 1700));
     }
 
-    public static Product addProduct() {
+    public void addProduct() {
         Scanner input = new Scanner(System.in);
         System.out.println("enter id:");
         int id = Integer.parseInt(input.nextLine());
@@ -26,10 +26,10 @@ public class Function {
         String produce = input.nextLine();
         System.out.println("enter price:");
         int price = Integer.parseInt(input.nextLine());
-        return new Product(id, name, releaseYear, produce, price);
+        products.add(new Product(id, name, releaseYear, produce, price));
     }
 
-    public static void edit(int id) {
+    public void edit(int id) {
         for (Product s : products) {
             if (id == s.getId()) {
                 Scanner input = new Scanner(System.in);
@@ -49,7 +49,7 @@ public class Function {
         }
     }
 
-    public static void del(int id) {
+    public void del(int id) {
         boolean flg = true;
         for (int i = 0; i < products.size(); i++) {
             if (id == products.get(i).getId()) {
@@ -62,13 +62,13 @@ public class Function {
         }
     }
 
-    public static void display() {
+    public void display() {
         for (Product s : products) {
             System.out.println(s);
         }
     }
 
-    public static void find(int id) {
+    public void find(int id) {
         for (int i = 0; i < products.size(); i++) {
             if (id == products.get(i).getId()) {
                 System.out.println(products.get(i));
@@ -76,12 +76,12 @@ public class Function {
         }
     }
 
-    public static void sort() {
+    public void sort() {
         Collections.sort(products);
         display();
     }
 
-    public static void sortDecrease() {
+    public void sortDecrease() {
         DecreasePrice decreasePrice = new DecreasePrice();
         Collections.sort(products, decreasePrice);
         display();
