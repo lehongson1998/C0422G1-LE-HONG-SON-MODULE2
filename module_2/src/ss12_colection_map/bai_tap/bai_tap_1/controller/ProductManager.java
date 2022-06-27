@@ -1,11 +1,10 @@
-package ss12_colection_map.bai_tap.bai_tap_1;
+package ss12_colection_map.bai_tap.bai_tap_1.controller;
+
+import ss12_colection_map.bai_tap.bai_tap_1.service.Function;
 
 import java.util.Scanner;
 
 public class ProductManager {
-    public static void main(String[] args) {
-        displayMain();
-    }
     public static void displayMain(){
         Function product = new Function();
         Scanner snc = new Scanner(System.in);

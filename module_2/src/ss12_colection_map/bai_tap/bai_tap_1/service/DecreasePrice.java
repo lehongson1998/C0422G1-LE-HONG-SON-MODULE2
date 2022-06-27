@@ -1,4 +1,6 @@
-package ss12_colection_map.bai_tap.bai_tap_1;
+package ss12_colection_map.bai_tap.bai_tap_1.service;
+
+import ss12_colection_map.bai_tap.bai_tap_1.model.Product;
 
 import java.util.Comparator;
 
